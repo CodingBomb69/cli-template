@@ -24,6 +24,12 @@ module.exports = {
             },
             {
                 include: [path.resolve(__dirname, '../src'),], //只对项目src文件的ts,tsx进行loader解析
+                test: /.sass$/,
+                enforce: 'pre',
+                use: [isDev ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader','sass-loader']
+            },
+            {
+                include: [path.resolve(__dirname, '../src'),], //只对项目src文件的ts,tsx进行loader解析
                 test: /.css$/,
                 enforce: 'pre',
                 use: [isDev ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']

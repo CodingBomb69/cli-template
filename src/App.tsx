@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Class from './components/Class'
-import './app.less'
-
+import './app.scss'
 
 
 export default function App() {
@@ -10,7 +9,7 @@ export default function App() {
 
   return (
     <div>
-      <h2>webpack5-react18-tsaaa</h2>
+      <h2 className='box'>webpack5-react18-tsaaa</h2>
       <h2>{process.env.NODE_ENV}</h2>
       <Class />
       <input value={count} onChange={(e) => { setCount(e.target.value) }} />
