@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Class from './components/Class'
-import './app.scss'
+<%= name %>
 
 
 export default function App() {
