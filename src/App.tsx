@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Class from './components/Class'
-<%= name %>
+<%= stylePathh %>
 
 
 export default function App() {
